@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+PyMuPDF
+python-docx
+langchain
+langchain-groq
+tenacity
+python-dotenv
