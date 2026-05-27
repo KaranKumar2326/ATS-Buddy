@@ -116,9 +116,11 @@ export function ResumeDropzone({
     >
       <input
         id="resume-file-picker"
+        name="resume-file"
         type="file"
         accept={accepted.map((ext) => `.${ext.replace(".", "")}`).join(",")}
         className="hidden"
+        aria-label="Upload resume file"
         disabled={disabled || isAnalyzing}
         onChange={async (e) => {
           const file = e.target.files?.[0]

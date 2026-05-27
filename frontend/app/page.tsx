@@ -153,10 +153,15 @@ export default function Home() {
 
               <div className="flex flex-col gap-3">
                 <div className="space-y-1.5">
-                  <label className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 ml-1">
+                  <label 
+                    htmlFor="target-role-input"
+                    className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 ml-1 cursor-pointer"
+                  >
                     Target Role <span className="text-rose-500 font-bold">*</span>
                   </label>
                   <Input 
+                    id="target-role-input"
+                    name="target-role"
                     placeholder="e.g. Senior Frontend Engineer" 
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
@@ -164,10 +169,15 @@ export default function Home() {
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 ml-1">
+                  <label 
+                    htmlFor="job-description-input"
+                    className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 ml-1 cursor-pointer"
+                  >
                     Job Description <span className="text-rose-500 font-bold">*</span>
                   </label>
                   <Textarea 
+                    id="job-description-input"
+                    name="job-description"
                     placeholder="Paste the job description here for tailored scoring..." 
                     className="min-h-[120px] bg-white/50 border-slate-200/60 focus:ring-indigo-500/20 resize-none"
                     value={jobDescription}
