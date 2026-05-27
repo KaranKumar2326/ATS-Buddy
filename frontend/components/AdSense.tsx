@@ -20,14 +20,19 @@ export function AdSense({
 
   useEffect(() => {
     if (!client) return
-    try {
-      // Safely invoke the Google AdSense push trigger in the browser
-      const adsbygoogle = (window as any).adsbygoogle || []
-      adsbygoogle.push({})
-    } catch (err) {
-      console.warn("AdSense push warning:", err)
-      setHasError(true)
-    }
+
+    // Introduce a short timeout to let the DOM layout complete and calculate available width
+    const timer = setTimeout(() => {
+      try {
+        const adsbygoogle = (window as any).adsbygoogle || []
+        adsbygoogle.push({})
+      } catch (err) {
+        console.warn("AdSense push warning:", err)
+        setHasError(true)
+      }
+    }, 150)
+
+    return () => clearTimeout(timer)
   }, [client])
 
   if (!client) {
