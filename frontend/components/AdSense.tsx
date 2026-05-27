@@ -45,11 +45,19 @@ export function AdSense({
 
   if (hasError) return null
 
+  const adStyle = {
+    display: "block",
+    width: "100%",
+    minWidth: "250px",
+    minHeight: "90px",
+    ...style,
+  }
+
   return (
-    <div className="adsense-wrapper w-full overflow-hidden flex justify-center py-2 min-h-[90px]">
+    <div className="adsense-wrapper w-full min-w-[250px] overflow-hidden flex justify-center py-2 min-h-[90px]">
       <ins
         className="adsbygoogle"
-        style={style}
+        style={adStyle}
         data-ad-client={client}
         data-ad-slot={adSlot}
         data-ad-format={adFormat}
