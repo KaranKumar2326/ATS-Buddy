@@ -48,6 +48,31 @@ We use a **Strict AI Auditor** model (Llama 3.3 70B) with a rigorous 100-point r
 
 The system is designed to be a **harsh critic**, ensuring that only truly optimized resumes achieve scores above 80.
 
+
+##  Monetization & Ad Integration
+
+The platform now includes dedicated Google AdSense integration areas designed to support sustainable monetization while maintaining a clean user experience.
+
+### Current Ad Placement Areas
+- Sidebar recommendation blocks
+- Analysis result sections
+- Mobile-responsive inline ad containers
+
+### Design Philosophy
+Ads are intentionally placed to:
+- Avoid disrupting resume analysis workflows
+- Preserve premium UI aesthetics
+- Maintain fast loading performance
+- Ensure responsive behavior across devices
+
+### AdSense Readiness
+- Semantic HTML structure
+- Responsive layout support
+- Optimized content spacing for ad rendering
+- SEO-friendly architecture for improved discoverability
+
+
+
 ##  Getting Started
 
 ### Prerequisites
