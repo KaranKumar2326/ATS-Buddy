@@ -71,7 +71,15 @@ Ads are intentionally placed to:
 - Optimized content spacing for ad rendering
 - SEO-friendly architecture for improved discoverability
 
+## Upcoming Features
 
+- Downloadable ATS analysis reports (PDF export)
+- AI-generated cover letter suggestions
+- Resume keyword heatmap visualization
+- Shareable public ATS report links
+- Resume score tracking history
+- AI-powered interview question generation
+- Dark mode support
 
 ##  Getting Started
 
