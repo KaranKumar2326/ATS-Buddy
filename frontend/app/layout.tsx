@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Strict ATS Resume Checker & Keyword Gap Analyzer | Free AI Audit",
-  description: "Optimize your resume for applicant tracking systems. Paste your target Job Description to run a strict AI-powered ATS check, identify critical keyword gaps, and get step-by-step impact-focused fixes.",
+  title: "Free ATS Resume Checker | Score & Scan Your Resume Instantly",
+  description: "Paste your job description to run a free ATS check. Scan your resume for keyword gaps, get an instant ATS score, and receive step-by-step fixes to get hired.",
   openGraph: {
     siteName: "ATS Resume Checker",
     url: "https://atsbuddy.qzz.io",
