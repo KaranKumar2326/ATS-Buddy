@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Strict ATS Resume Checker & Keyword Gap Analyzer | Free AI Audit",
   description: "Optimize your resume for applicant tracking systems. Paste your target Job Description to run a strict AI-powered ATS check, identify critical keyword gaps, and get step-by-step impact-focused fixes.",
+  openGraph: {
+    siteName: "ATS Resume Checker",
+    url: "https://atsbuddy.qzz.io",
+    type: "website",
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +44,18 @@ export default function RootLayout({
             crossOrigin="anonymous"
           />
         )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "ATS Resume Checker",
+              "alternateName": ["ATS Checker", "ATS Resume Gap Analyzer"],
+              "url": "https://atsbuddy.qzz.io"
+            })
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

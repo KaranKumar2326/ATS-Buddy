@@ -63,7 +63,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <div className="relative h-10 w-10 rounded-2xl bg-white/80 backdrop-blur-sm ring-1 ring-slate-200/70">
               <Image
-                src="/favicon.ico"
+                src="/icon.svg"
                 alt="ATS"
                 fill
                 className="p-2"
